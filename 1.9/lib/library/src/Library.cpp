@@ -73,8 +73,7 @@ void Library::print_available_books() const {
 		return b1.title() < b2.title();
 	});
 	for (auto it = books_.begin(); it != books_.end(); ++it)
-		cout << *it << ' ';
-	cout << endl;
+		cout << *it;
 }
 
 void Library::print_transactions() const {
@@ -110,3 +109,4 @@ void read_books_from_file(const string &f, Library &library) {
 		library.add_book_to_library(b);
 	}
 }
+

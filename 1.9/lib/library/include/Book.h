@@ -12,8 +12,9 @@ enum class Genre {
 };
 class Book {
 public:
-  Book(const string &i, const string &t, const string &a, const Date &d,const Genre &gg);
-  Book() {}
+  Book(const string &i, const string &t, const string &a, const Date &d, const Genre &gg);
+  Book(){}
+  Book(const string &t);
   string isbn() const;
   string title() const;
   string author() const;
@@ -27,19 +28,19 @@ public:
   void set_author_name(const string &n);
   void set_genre(const Genre gg);
   void set_copyright_date(const Date d);
-
+	void check_out();
 private:
   string isbn_;
   string title_;
   string author_;
   Date copyright_date_;
-  bool is_checked_out_ = 0;
+  bool is_checked_out_ = false;
   Genre genre_;
 };
 bool is_book(const string &i);
 ostream &operator<<(ostream &os, const Book &b);
 string return_genre_as_string(int g);
-string return_status_as_string(int s);
+string return_status_as_string(bool s);
 Genre convert_string_to_genre(const string &s);
 
 

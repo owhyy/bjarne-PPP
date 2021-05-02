@@ -5,7 +5,8 @@
 class Patron {
 public:
   Patron() {}
-  Patron(string n, double f);
+  Patron(string n, int id, double f);
+  Patron(string n, int id);
   Patron(string n);
   string patron_name() const;
   int identity_number() const;
@@ -18,7 +19,7 @@ public:
 
 private:
   string patron_name_;
-  int identity_number_ = rand() % 500 + 1;
+  int identity_number_ = rand() % 100 + 1;
   double fee_ = 0.0;
 };
 

@@ -1,6 +1,7 @@
 #include "Patron.h"
 // member functions
-Patron::Patron(string n, double f) : patron_name_{n}, fee_{f} {}
+Patron::Patron(string n, int id, double f) : patron_name_{n}, identity_number_{id}, fee_{f} {}
+Patron::Patron(string n, int id) : patron_name_{n}, identity_number_{id} {}
 Patron::Patron(string n) : patron_name_{n} {}
 string Patron::patron_name() const { return patron_name_; }
 int Patron::identity_number() const { return identity_number_; }

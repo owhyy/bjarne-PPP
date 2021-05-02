@@ -7,6 +7,7 @@ Book::Book(const string &i, const string &t, const string &a, const Date &d,
   if (!is_book(i))
     error("Invalid book");
 }
+Book::Book(const string& t){title_=t;}
 string Book::isbn() const { return isbn_; }
 string Book::title() const { return title_; }
 string Book::author() const { return author_; }
@@ -20,7 +21,7 @@ void Book::set_title(const string &t) { this->title_ = t; }
 void Book::set_author_name(const string &n) { this->author_ = n; }
 void Book::set_genre(const Genre gg) { this->genre_ = gg; }
 void Book::set_copyright_date(const Date d) { this->copyright_date_ = d; }
-
+void Book::check_out(){is_checked_out_=true;}
 // helper functions
 bool is_book(const string &s) {
   auto last = s.find_last_of('-');
@@ -55,7 +56,8 @@ ostream &operator<<(ostream &os, const Book &b) {
   return os << b.title() << '\n'
             << b.isbn() << '\n'
             << b.author() << '\n'
-            << return_genre_as_string(b.genre());
+            << return_genre_as_string(b.genre())<<'\n'
+            << return_status_as_string(b.status())<<"\n\n";
 }
 
 string return_genre_as_string(int g) {
@@ -82,7 +84,7 @@ string return_genre_as_string(int g) {
   }
   return genre;
 }
-string return_status_as_string(int s) {
+string return_status_as_string(bool s) {
   return s ? "Checked in" : "Not checked in";
 }
 

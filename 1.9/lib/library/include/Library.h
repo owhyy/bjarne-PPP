@@ -38,5 +38,4 @@ private:
 void read_books_from_file(const string &f, Library &library);
 ostream &operator<<(ostream &os, const Library::Transaction &t);
 
-
 #endif // LIBRARY_H
