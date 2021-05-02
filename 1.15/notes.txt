@@ -1,0 +1,15 @@
+1. A function of one argument is an argument that is used to graph a function.
+2. A continuous line is used to represent data of verry little deviation? while points are used to express bigger difference between data
+3. Slope is defined by the function double slope(double x){return x/2;}
+4. A parabola is the graphical representation of the double square(double x){return x*x;} function
+5. An x-axis is made by specifying the axis type (Axis::x), the point of beginning, length, number of notches and some text. The same goes for y, but we use Axis::y instead, and the starting point will be different as well.
+6. A default argument is a function argument with a specified value. It is used when you want to set some defaultsfor
+function parameters, but don't wan't to make a bunch of constructors (even though you could declare them inside the class??)
+7. You add 2 functions together by defining a new one that returns the result of their return values' addition.
+8. We color and label a graphed function to make it more readable and representative.
+9. A series aproximates a function when a function gets closer to a specific value every time it's called, up untill a point where it's no longer working correctly.
+10. You would sketch out the layout of a graph before writing the code to draw it in order to make it easier and clearer to visualise, and then implement something from a physical image into code.
+11. You scale your graph by using variables that are modified by input.
+12. It's not always possible, but if you have a clear image of what you need to draw, some specific and well-calculated constants and variables, you can scale the input without trial and error.
+13. You have to format your input to get rid of all the excess characters (in case they come in a different shape than just being numbers), and to be able to organise them by representation.
+14. To plan the general layout of a graph you need to first ask yourself what it is you're trying to graph. After this you think about how you want your graph to be organised in regards to the x and y coordinates. Then you think of how you're going to represent the data, and only then you start adding lables and colors to the graph.

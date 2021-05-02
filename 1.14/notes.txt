@@ -1,0 +1,39 @@
+1. The application domain is the range in which the application will be used??
+2. Names should express the behaviour of the functions and the objects that they hold.
+3. We can name functions, types, and objects.
+4. Shape offers services for storing points, providing read-only access to them, movement, as well as color and style
+facilities, and, of course, means for displaying(drawing) the specific shapes.
+5. An abstract is a class that can only be used as a base class, so we can't use it outside the class and subclass
+scope, while a
+non-abstract/concrete class is declarable and usable in the main function scope.
+6. A class is made abstract by either making its constructors protected, or by using pure virtual functions.
+7. Access control is responsible for allowing access to diferent class objects.
+8. Making a data member private allows it to only be accessed by the class in which the data member is defined.
+9. A virtual function is a function that can subclasses can implement in a different, class-specific way
+(overriding). A non-virtual function is class-specific, and is not modifiable by subclasses.
+10. A base class is a class from which other classes, called subclasses inherit, therefore being able to access
+its members.
+11. A derived class is a class that inherits from a base class.
+12. The position/representation of objects in memory.
+13. ???
+14. An inheritance diagram is a diagram representing the hierarchy of classes (the base class along with its
+subclasses).
+15. A protected member can be accessed by member functions and subclass member function. A private member can only be
+accessed by member functions.
+16. Protected members and public members can be accessed from a class derived from it.
+17. A pure virtual function is a function that NEEDS to be overridden in order to allow creation of said object that
+uses it, while a virtual can, but doesn't have to be, in order for the object to be created.
+18. A member function should be made virtual if you want the subclasses of it to be able to implement its own version
+of the function.
+19. A member function should be made virtual pure when you want the class to only be used as a base class, thus not
+allowing object creation, and have subclasses implement their own versions of the function, that will most likely be
+different accross classes.
+20. Overriding means redefining a virtual member function inside a different class than the base class.
+21. Interface inheritance refers to functions using objects of subclass type, where a super class-type object is
+required, while implementation inheritance represents the ability of subclasses to use superclass members.
+22. Object-oriented programming is a programming paradigm operating on objects, conforming to 3 principles: 
+  1. Encapsulation - limiting access to objects and organizing them in a bigger object (class).
+  2. Inheritance - having objects that have a common "ancestor" / parent class share parameters and objects
+  together.
+  3. Polymorphism - allowing for distinction between common-ancestor classes by using specific language features (such
+  as virtual functions or protected members).

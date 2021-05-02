@@ -1,0 +1,59 @@
+1. A declaration includes the object in the scope, while the definition tells what the object does.
+2. A declaration is usually written as (in terms of a function):
+  void f(param);
+While a definition:
+  void f(param)
+  {...}
+3. A declaration of a variable uses the "extern" specifier before the type, which tells the compiler to use the
+declaration of that variable
+  extern T a;
+while a definition is just: 
+  T a = val;
+4. Because the compiler wouldn't know about the existence of those files.
+5. int a; is both, a definition and a declaration (?)
+6. Because variables of built-in types are randomly intialized, which could cause bugs.
+7. A function declaration consists of the type of the function (return value) and the types of parameters (with or
+without their names) + the name of the function.
+8. Good indentation makes code more readable.
+9. The header files are used for declaration of variables and functions.
+10. The scope of a declaration is the region in which the formal parameters are declared.
+11. There are:
+  -global scope:
+    int a;
+    ...
+    int main(...)
+  -local scope:
+    T f(param){...}
+  -statement scope:
+    for(...){}
+  -namespace scope:
+    namespace ns{...}
+  -class scope:
+    class c{...};
+12. The class scope contains objects visible only inside the class ???
+13. Because when code gets big, it's hard to tell which function reads/writes to a global variable.
+14. When passing by value, you are making a copy of the element; when passing by reference you are using the object
+directly, thus modifying it (if non-const).
+15. When passing by reference all the changes done to the said variable will modify the variable, while when passing
+by const reference, it will yield an error if trying to modify it.
+16. Swap is a function that replaces 2 elements with each others' value.
+17. You wouldn't want to define a function with vectot<double> by value, because it's worthless to make a copy of the
+vector when you can just use it as a whole.
+18. v[++i] = ++i; //undefined order of evaluation
+Undefined order of evaluation could be a problem because each OS and compiler can have a different order of
+evaluation, thus the same code can behave differently on different devices.
+19. x && y - x and y
+    x || y - x or y
+20. Functions within classes, classes within classes.
+21. An activation record contains a copy of all the function's parameters, local variables and other execution stuff
+that the function uses to return to its caller. 
+22. The call stack represents the order in which functions (recursive, generally speaking) are executed. We need it to
+make sure the functions executed in the right order.
+23. A namespace is used to organize code into a named part without defining a type. 
+24. A class is a type. A namespace is just a naming object, i.e is typeless.
+25. A using declaration is a directive that tells the compiler to use the objects from the specific
+namespace;
+26. You should avoid using directives to be able to control which objects from which namespaces are used, and avoid
+name clashes.
+27. Namespace std is a directive that tells the compiler to use the functions from the namespace std.
+
