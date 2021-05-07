@@ -1,0 +1,20 @@
+1. You want a graphical user interface to be able to provide users with a easier to operate program.
+2. You want a non-graphical user interface when you don't need graphical output (terminal stuff like text etc.)
+3. A software layer is a part of structure/organisation of a bigger system, responsible for a specific part.
+4. You want to layer software to organize it better. Imagine having to use directly the device driver layer to display a gui...
+5. Not all languages know how to manage their own memory (like pointers and references), so we have to make sure that this won't matter.
+6. A callback is a function that calls another function in a specific scenario/case.
+7. A widget is a form of interaction with a program through a GUI.
+8. Control
+9. Fast Light ToolKit
+10. Ef El Ti Kei
+11. wxWidgets
+12. If you want ot sound fancier - use the word widget. If you want to sound more descriptive but less evocative - use the word control.
+13. Buttons, menus
+14. You use a inbox when you want to get input, but in a gui-built application.
+15. A value stored in an inbox can either be a string or an int.
+16. You use a button when you want the user to control the behaviour of your program, and move stuff.
+17. You would use a menu when you want to group together more buttons.
+18. Control inversion is the contrary to when a program uses terminal input. In control inversion, the user is the one controlling the behaviour and functioning of the program. The program executes functions linked to button clicks.
+19. The basic strategy for debugging a GUI includes testing often and testing functions as specific parts rather than as a whole.
+20. Debugging GUI code is harder because of multithreading, that is - there is more than one thing happening in a gui program. Also, the unability to use the terminal. (and it takes like 3 seconds for the program to run)..

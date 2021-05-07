@@ -6,7 +6,7 @@ int main(){
 
   Smiley_hat hs{Point{300, 300}, 100};
   win.attach(hs);
-  
+   
   Frowny_hat hf{Point {500, 300}, 100};
   win.attach(hf);
   
