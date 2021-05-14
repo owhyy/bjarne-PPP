@@ -10,6 +10,8 @@
 
 #include <iostream>
 
+constexpr double PI = 3.14159265;
+
 //------------------------------------------------------------------------------
 
 namespace Graph_lib {
@@ -31,8 +33,10 @@ Color Shape::color() const { return lcolor; }
 
 //------------------------------------------------------------------------------
 
-void Shape::set_style(Line_style sty) { ls = sty; int_ls = sty.style();}
-
+void Shape::set_style(Line_style sty) {
+  ls = sty;
+  int_ls = sty.style();
+}
 
 //------------------------------------------------------------------------------
 
@@ -511,6 +515,16 @@ void Image::draw_lines() const {
     p->draw(point(0).x, point(0).y, w, h, cx, cy);
   else
     p->draw(point(0).x, point(0).y);
+}
+
+//------------------------------------------------------------------------------
+
+Regular_hexagon::Regular_hexagon(Point p, int rr) : c{p}, r{rr} {
+  for (int i = 0; i != 360; i += 60) {
+    double x = c.x + cos(i * PI / 180) * r;
+    double y = c.y + sin(i * PI / 180) * r;
+    add(Point{int(x + r), int(y + r)});
+  }
 }
 
 //------------------------------------------------------------------------------
